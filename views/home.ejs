@@ -1,10 +1,30 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="/auth/google">Sign In</a>
-</body>
-</html>
+<%-include("partials/header")%>
+<link rel="stylesheet" href="css/home.css">
+
+<%-include("partials/navbar")%>
+
+<div class="container-fluid home-container">
+
+  <% if(tweets.length == 0){ %> 
+
+    <div class="card tweet">
+      <div class="card-body">
+        <a href="#" class="card-title user card-link">Admin</a>
+        <p class="card-text">Welcome, You are the first one here.<br>This is a tweet. Here you would see tweets of other users.</p>
+      </div>
+    </div>
+
+  <% } else { %> 
+    <% tweets.map( tweet =>{  %>
+      <div class="card tweet">
+        <div class="card-body">
+          <a href="#" class="card-title user card-link"><%- tweet.from.name %></a>
+          <p class="card-text"><%- tweet.post %></p>
+        </div>
+      </div>
+ 
+    <%  }) %>
+  <%  } %>
+</div>
+
+<%-include("partials/footer")%>

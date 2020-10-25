@@ -1,0 +1,17 @@
+body {
+  color: #293031;
+  background-color: #f1f6f9;
+}
+
+.main-navbar {
+  background-color: #28abb9;
+}
+
+.home-container {
+  padding: 2% 5%;
+}
+
+.tweet {
+  text-align: left;
+  margin: 2%;
+}

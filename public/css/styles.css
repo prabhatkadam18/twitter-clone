@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-color: rgb(60, 137, 204);
+  color: rgb(230, 220, 220);
+  text-align: center;
+} 
+
+.top {
+  margin: 100px auto 40px;
+}
+
+.landing-main-text {
+  font-size: 110px;
+  padding-bottom: 0;
+  font-family: 'Baloo Tammudu 2', cursive;
+  margin-bottom: -20px;
+}
+
+.landing-author-text{
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.landing-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 0;
+}
+
+.landing-btn {
+  margin-top: 50px;
+}
+.landing-btn a {
+  background-color: beige;
+  font-weight: 600;
+  color: black;
+}
+.landing-btn a:hover {
+  background-color: rgb(60, 137, 204);
+  color: rgb(230, 220, 220);
+}
